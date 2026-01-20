@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+html, body {
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "Poppins";
+background: #e0e0e0;
+}
+a {
+color: #fff;
+text-decoration: none;
+}
+.navbar {
+color: #fff;
+background: #9238c2 !important;
+position:sticky;
+top:0;
+z-index:9999;
+}
+.navbar .navbar-brand, .navbar .nav-link {
+color: #fff;
+font-weight: 900;
+}
+.navbar .navbar-toggler, .navbar .navbar-toggler:focus {
+box-shadow: none;
+border: none;
+}
+.card_container{
+  padding:1rem;
+}
+.card {
+  position: relative;
+  border-radius:0.75rem;
+  background:#000000d6;
+  border:#000 1px;
+}
+.card-s {
+  width: 10rem;
+  height: 10rem;
+  background-color: #e5e4e4d6;
+  box-shadow: 0 3px 10px gray;
+}
+
+.card_img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  border-radius:0.75rem;
+  height:300px;
+}
+
+.card_center {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.card:hover .card_img {
+  opacity: 0.3;
+}
+
+.card:hover .card_center {
+  opacity: 1;
+}
+
+.card_text {
+  color: #fff;
+  font-size: 16px;
+}
+.card_text a {
+  color: #999999;
+  font-weight: bolder;
+}
+.underline {
+  font-family: monospace;
+}
+.footer {
+background: #9238c2 !important;
+padding: 1rem;
+}
+.footer .icon {
+display: inline-block;
+width: 20px;
+height: 20px;
+margin-right:16px;
+}
+.icon {
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+.footer .envelop {
+background: url("../assets/mail.png");
+}
+.footer .instagram {
+background: url("../assets/instagram.png");
+}
+.footer .x {
+background: url("../assets/x.png");
+}
+.footer .git {
+background: url("../assets/github-logo.png");
+}
+.footer p {
+color: #fff;
+float: right;
+}
